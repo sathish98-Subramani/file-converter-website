@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SwiftConvert | Image Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>SwiftConvert</h1>
+        <p class="subtitle">Convert between JPG and PNG instantly</p>
+
+        <div class="card">
+            <div class="upload-section">
+                <input type="file" id="imageInput" accept="image/jpeg, image/png" hidden>
+                <label for="imageInput" class="drop-zone" id="dropZone">
+                    <span>Click or Drag Image Here</span>
+                    <small>Supports JPG, PNG</small>
+                </label>
+            </div>
+
+            <div id="previewContainer" class="hidden">
+                <img id="imagePreview" src="" alt="Preview">
+                <div class="info" id="fileInfo"></div>
+                
+                <div class="controls">
+                    <button id="convertBtn" class="primary-btn">Convert to <span id="targetFormat">PNG</span></button>
+                    <a id="downloadLink" class="secondary-btn hidden">Download Converted Image</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
